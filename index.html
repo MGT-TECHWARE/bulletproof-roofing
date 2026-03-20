@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bulletproof Roofing & Restoration LLC - Professional roofing, siding, gutters, and storm damage restoration in Dallas, Fort Worth, and North Texas. Licensed, bonded, and insured. Free inspections available.">
+    <meta name="theme-color" content="#1E293B">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bulletproof Roofing & Restoration LLC - Dallas Roofing Experts">
+    <meta property="og:description" content="Professional roofing and storm damage restoration services serving Dallas, Fort Worth, and North Texas.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:image" content="https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-1/558857696_1252278066703366_454106036363686436_n.jpg?stp=dst-jpg_s200x200_tt6">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-1/558857696_1252278066703366_454106036363686436_n.jpg?stp=dst-jpg_s200x200_tt6">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Bulletproof Roofing & Restoration LLC | Dallas Roofing Experts</title>
+
+    <style>
+        /* ============================================================================ */
+        /* RESET & FOUNDATIONS */
+        /* ============================================================================ */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1E293B;
+            --secondary: #374151;
+            --accent: #EA580C;
+            --bg-light: #F1F5F9;
+            --text-dark: #1E293B;
+            --text-light: #FFFFFF;
+            --border: #CBD5E1;
+            --success: #10B981;
+
+            --font-display: 'Bebas Neue', 'Barlow Condensed', sans-serif;
+            --font-heading: 'Barlow Condensed', sans-serif;
+            --font-body: 'IBM Plex Sans', sans-serif;
+
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D84500;
+        }
+
+        ::selection {
+            background-color: var(--accent);
+            color: var(--text-light);
+        }
+
+        /* ============================================================================ */
+        /* TYPOGRAPHY */
+        /* ============================================================================ */
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-family: 'Bebas Neue', var(--font-heading);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.3s var(--ease-out);
+        }
+
+        a:hover {
+            color: #D84500;
+        }
+
+        /* ============================================================================ */
+        /* LAYOUT UTILITIES */
+        /* ============================================================================ */
+
+        .container {
+            width: min(90%, 1200px);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section {
+            position: relative;
+            padding: clamp(3rem, 8vw, 6rem) 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: clamp(2rem, 5vw, 4rem);
+        }
+
+        .section-heading h2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-heading h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent), transparent);
+            border-radius: 2px;
+        }
+
+        /* ============================================================================ */
+        /* NAVIGATION */
+        /* ============================================================================ */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(30, 41, 59, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s var(--ease-out);
+        }
+
+        nav.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-container {
+            width: min(95%, 1200px);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .logo img {
+            height: 45px;
+            width: auto;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            position: relative;
+            transition: color 0.3s var(--ease-out);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.4s var(--ease-out);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--accent);
+            color: var(--text-light);
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.4s var(--ease-out);
+        }
+
+        .nav-cta:hover {
+            background: #D84500;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(234, 88, 12, 0.3);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 8px;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-light);
+            border-radius: 2px;
+            transition: all 0.4s var(--ease-out);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(10px, 10px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(8px, -8px);
+        }
+
+        /* Mobile navigation */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(30, 41, 59, 0.98);
+                flex-direction: column;
+                gap: 0;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s var(--ease-out);
+                backdrop-filter: blur(20px);
+            }
+
+            .nav-links.active {
+                max-height: 500px;
+            }
+
+            .nav-links li {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 1rem 1.5rem;
+                color: var(--text-light);
+            }
+
+            .nav-cta {
+                margin: 1rem;
+                text-align: center;
+                display: block;
+            }
+        }
+
+        /* ============================================================================ */
+        /* HERO SECTION */
+        /* ============================================================================ */
+
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 3rem;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--primary) 0%, #0F172A 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: var(--accent);
+            opacity: 0.05;
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.05;
+            overflow: hidden;
+        }
+
+        .hero h1 .word {
+            display: inline-block;
+            margin-right: 0.2em;
+            opacity: 0;
+            animation: slideUp 0.6s var(--ease-out) forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 .word:nth-child(1) { animation-delay: 0.1s; }
+        .hero h1 .word:nth-child(2) { animation-delay: 0.2s; }
+        .hero h1 .word:nth-child(3) { animation-delay: 0.3s; }
+        .hero h1 .word:nth-child(4) { animation-delay: 0.4s; }
+        .hero h1 .word:nth-child(5) { animation-delay: 0.5s; }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #CBD5E1;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeIn 0.8s var(--ease-out) 0.6s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeIn 0.8s var(--ease-out) 0.8s forwards;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s var(--ease-out);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            min-height: 44px;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--text-light);
+            box-shadow: 0 10px 30px rgba(234, 88, 12, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #D84500;
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(234, 88, 12, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            background: var(--text-light);
+            color: var(--primary);
+            transform: translateY(-4px);
+        }
+
+        .hero-image {
+            position: relative;
+            height: 100%;
+            min-height: 500px;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: scaleIn 1s var(--ease-out) 0.2s both;
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(1.1);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.4) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+                min-height: auto;
+                padding: 120px 0 3rem;
+            }
+
+            .hero-content {
+                order: 2;
+            }
+
+            .hero-image {
+                order: 1;
+                min-height: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 0 2rem;
+            }
+
+            .hero-content {
+                padding: 0 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* ============================================================================ */
+        /* STICKY MOBILE CTA */
+        /* ============================================================================ */
+
+        .mobile-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary);
+            padding: 1rem;
+            z-index: 999;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+            animation: slideUp 0.4s var(--ease-out);
+        }
+
+        .mobile-cta a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: var(--accent);
+            color: var(--text-light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            min-height: 44px;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .mobile-cta a:hover {
+            background: #D84500;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-cta {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 80px;
+            }
+        }
+
+        /* ============================================================================ */
+        /* TRUST BADGES SECTION */
+        /* ============================================================================ */
+
+        .trust-section {
+            background: var(--primary);
+            color: var(--text-light);
+            padding: 4rem 0;
+            margin-top: 0;
+        }
+
+        .trust-container {
+            width: min(95%, 1200px);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .trust-badge {
+            padding: 1.5rem;
+            position: relative;
+            animation: slideIn 0.6s var(--ease-out) both;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .trust-badge:nth-child(1) { animation-delay: 0.1s; }
+        .trust-badge:nth-child(2) { animation-delay: 0.2s; }
+        .trust-badge:nth-child(3) { animation-delay: 0.3s; }
+        .trust-badge:nth-child(4) { animation-delay: 0.4s; }
+
+        .trust-badge svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .trust-badge h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .trust-badge p {
+            font-size: 0.9rem;
+            color: #CBD5E1;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* ============================================================================ */
+        /* ABOUT SECTION */
+        /* ============================================================================ */
+
+        .about {
+            background: var(--bg-light);
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px dashed var(--border);
+        }
+
+        .highlight {
+            padding: 1rem;
+        }
+
+        .highlight-number {
+            font-size: 2.5rem;
+            font-family: var(--font-display);
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-label {
+            font-size: 0.9rem;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        /* ============================================================================ */
+        /* SERVICES SECTION */
+        /* ============================================================================ */
+
+        .services {
+            background: var(--bg-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--text-light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.5s var(--ease-out);
+            transform: translateY(0);
+            animation: scaleSlideUp 0.6s var(--ease-out) both;
+            cursor: pointer;
+            position: relative;
+        }
+
+        @keyframes scaleSlideUp {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+        .service-card:nth-child(4) { animation-delay: 0.4s; }
+        .service-card:nth-child(5) { animation-delay: 0.5s; }
+        .service-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: var(--secondary);
+            position: relative;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s var(--ease-out);
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.08);
+        }
+
+        .service-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.2) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s var(--ease-out);
+        }
+
+        .service-card:hover .service-image::after {
+            opacity: 1;
+        }
+
+        .service-content {
+            padding: 2rem;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card p {
+            color: var(--secondary);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            line-height: 1.6;
+        }
+
+        /* ============================================================================ */
+        /* PROCESS SECTION */
+        /* ============================================================================ */
+
+        .process {
+            background: linear-gradient(180deg, var(--bg-light) 0%, var(--text-light) 100%);
+        }
+
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+            position: relative;
+        }
+
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 50%, transparent 50%, transparent 100%);
+            z-index: 0;
+        }
+
+        @media (max-width: 768px) {
+            .process-timeline::before {
+                display: none;
+            }
+        }
+
+        .process-step {
+            position: relative;
+            padding-top: 100px;
+            text-align: center;
+            animation: fadeInUp 0.7s var(--ease-out) both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .process-step:nth-child(1) { animation-delay: 0.1s; }
+        .process-step:nth-child(2) { animation-delay: 0.3s; }
+        .process-step:nth-child(3) { animation-delay: 0.5s; }
+        .process-step:nth-child(4) { animation-delay: 0.7s; }
+
+        .process-number {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-family: var(--font-display);
+            color: var(--text-light);
+            font-weight: 700;
+            z-index: 1;
+            box-shadow: 0 8px 20px rgba(234, 88, 12, 0.3);
+        }
+
+        .process-step h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .process-step p {
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        .process-image {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 1rem;
+            background: var(--secondary);
+        }
+
+        .process-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s var(--ease-out);
+        }
+
+        .process-step:hover .process-image img {
+            transform: scale(1.05);
+        }
+
+        /* ============================================================================ */
+        /* GALLERY SECTION */
+        /* ============================================================================ */
+
+        .gallery {
+            background: var(--bg-light);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 300px;
+            animation: galleryFadeIn 0.8s var(--ease-out) both;
+        }
+
+        @keyframes galleryFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gallery-item:nth-child(1) { animation-delay: 0.1s; }
+        .gallery-item:nth-child(2) { animation-delay: 0.2s; }
+        .gallery-item:nth-child(3) { animation-delay: 0.3s; }
+        .gallery-item:nth-child(4) { animation-delay: 0.4s; }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s var(--ease-out);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1) rotate(1deg);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(30, 41, 59, 0.3) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.4s var(--ease-out);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-label {
+            color: var(--text-light);
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ============================================================================ */
+        /* CONTACT SECTION */
+        /* ============================================================================ */
+
+        .contact {
+            background: var(--primary);
+            color: var(--text-light);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            animation: slideIn 0.6s var(--ease-out) both;
+        }
+
+        .contact-item:nth-child(1) { animation-delay: 0.1s; }
+        .contact-item:nth-child(2) { animation-delay: 0.2s; }
+        .contact-item:nth-child(3) { animation-delay: 0.3s; }
+        .contact-item:nth-child(4) { animation-delay: 0.4s; }
+
+        .contact-item h3 {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .contact-item p {
+            font-size: 1.2rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .emergency-line {
+            background: rgba(234, 88, 12, 0.15);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .emergency-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .emergency-number {
+            font-size: 1.8rem;
+            font-family: var(--font-display);
+            color: var(--accent);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s var(--ease-out);
+            min-height: 44px;
+            font-weight: 600;
+        }
+
+        .contact-link:hover {
+            background: var(--accent);
+            color: var(--text-light);
+        }
+
+        /* CONTACT FORM */
+        .contact-form {
+            animation: slideIn 0.6s var(--ease-out) 0.2s both;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            color: #CBD5E1;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-light);
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: all 0.3s var(--ease-out);
+            min-height: 44px;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.2);
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+            font-family: var(--font-body);
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 1024px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============================================================================ */
+        /* HOURS SECTION */
+        /* ============================================================================ */
+
+        .hours {
+            background: var(--bg-light);
+        }
+
+        .hours-grid {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .hours-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            animation: slideIn 0.6s var(--ease-out) both;
+        }
+
+        .hours-item:last-child {
+            border-bottom: none;
+        }
+
+        .hours-item:nth-child(1) { animation-delay: 0.1s; }
+        .hours-item:nth-child(2) { animation-delay: 0.2s; }
+        .hours-item:nth-child(3) { animation-delay: 0.3s; }
+
+        .hours-day {
+            font-weight: 600;
+            color: var(--primary);
+            font-family: var(--font-heading);
+        }
+
+        .hours-time {
+            text-align: right;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .hours-note {
+            padding: 1.5rem;
+            background: var(--primary);
+            color: var(--text-light);
+            border-radius: 8px;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ============================================================================ */
+        /* FOOTER */
+        /* ============================================================================ */
+
+        footer {
+            background: #0F172A;
+            color: var(--text-light);
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            width: min(95%, 1200px);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-section h4 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            font-size: 0.9rem;
+            color: #CBD5E1;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .service-area-list {
+            columns: 2;
+            column-gap: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .service-area-list li {
+            list-style: none;
+            padding-left: 1rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+            break-inside: avoid;
+        }
+
+        .service-area-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .footer-bottom {
+            width: min(95%, 1200px);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #64748B;
+        }
+
+        @media (max-width: 768px) {
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* ============================================================================ */
+        /* RESPONSIVE UTILITIES */
+        /* ============================================================================ */
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 2rem 1rem;
+            }
+
+            .section-heading {
+                margin-bottom: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hours-grid {
+                max-width: 100%;
+            }
+        }
+
+        /* ============================================================================ */
+        /* VISIBILITY UTILITIES */
+        /* ============================================================================ */
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========================================================================== -->
+    <!-- NAVIGATION -->
+    <!-- ========================================================================== -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-1/558857696_1252278066703366_454106036363686436_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=KmO5clHaLqcQ7kNvwE3sg9P&_nc_oc=Adqa3-X6A7bilM-LgNh6eW0Y8mAsQmu3pacQERtYcny4CHYQx6rnJDCKqcUs8GZ0vNwVgpli2isP2oUh_oWwLgL5&_nc_zt=24&_nc_ht=scontent-dfw6-1.xx&_nc_gid=FYxd2pXqf-fy3FBXlsqyLA&_nc_ss=7a32e&oh=00_AfxUOQVxssfi5i6JBUg5bo9GDripzxekJ4OdMJx49v7fHw&oe=69C3494B" alt="Bulletproof Roofing Logo">
+                <span>Bulletproof</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="tel:+14695406823" class="nav-cta">Call Now</a>
+        </div>
+    </nav>
+
+    <!-- ========================================================================== -->
+    <!-- MOBILE CTA -->
+    <!-- ========================================================================== -->
+    <div class="mobile-cta">
+        <a href="tel:+14695406823">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            Tap to Call
+        </a>
+    </div>
+
+    <!-- ========================================================================== -->
+    <!-- HERO SECTION -->
+    <!-- ========================================================================== -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                <span class="word">Your</span>
+                <span class="word">Roof.</span>
+                <span class="word">Our</span>
+                <span class="word">Reputation.</span>
+            </h1>
+            <p class="hero-subtitle">Expert roofing, siding, gutters, and storm damage restoration in Dallas and North Texas. Licensed, bonded, and insured.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Get My Free Inspection</a>
+                <a href="tel:+14695406823" class="btn btn-secondary">Call (469) 540-6823</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="STOCK-IMAGES/roofing/6.jpg" alt="Completed roof installation with perfect curb appeal">
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- TRUST BADGES -->
+    <!-- ========================================================================== -->
+    <section class="trust-section">
+        <div class="trust-container">
+            <div class="trust-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <h4>Licensed & Bonded</h4>
+                <p>Full compliance with all regulations</p>
+            </div>
+
+            <div class="trust-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 12l2 2 4-4m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4>Fully Insured</h4>
+                <p>Complete coverage on all projects</p>
+            </div>
+
+            <div class="trust-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+                <h4>Free Inspections</h4>
+                <p>No obligation roof assessments</p>
+            </div>
+
+            <div class="trust-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                <h4>Storm Damage Experts</h4>
+                <p>Swift disaster relief response</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- ABOUT SECTION -->
+    <!-- ========================================================================== -->
+    <section class="section about">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Why Choose Bulletproof Roofing?</h2>
+            </div>
+
+            <div class="about-content">
+                <p>Bulletproof Roofing & Restoration LLC has been delivering exceptional roofing solutions and storm damage restoration across North Texas. We're specialists in handling insurance claims, ensuring you get the coverage you deserve. Our team provides comprehensive services including roof replacement, repair, siding installation, gutter systems, framing work, and emergency disaster relief.</p>
+                <p>With a commitment to quality workmanship and customer satisfaction, we've built our reputation on reliable, lasting solutions. Whether you need routine maintenance or emergency repairs after a storm, Bulletproof Roofing is here to protect your property.</p>
+
+                <div class="highlights">
+                    <div class="highlight">
+                        <div class="highlight-number">990+</div>
+                        <div class="highlight-label">Community Members</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-number">24/7</div>
+                        <div class="highlight-label">Emergency Response</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-number">100%</div>
+                        <div class="highlight-label">Satisfaction Guaranteed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- SERVICES SECTION -->
+    <!-- ========================================================================== -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="services-grid">
+                <!-- Roof Replacement -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="STOCK-IMAGES/roofing/1.jpg" alt="Professional roof replacement installation">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🏠</div>
+                        <h3>Roof Replacement</h3>
+                        <p>Complete roof replacement using premium materials, expert installation, and manufacturer warranties for lasting protection.</p>
+                    </div>
+                </div>
+
+                <!-- Roof Repair -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="STOCK-IMAGES/roofing/2.jpg" alt="Close-up roof repair with hammer and nails">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🔧</div>
+                        <h3>Roof Repair</h3>
+                        <p>Quick and reliable repairs for leaks, damaged shingles, flashing issues, and other roofing problems to extend roof life.</p>
+                    </div>
+                </div>
+
+                <!-- Roof Inspections -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="STOCK-IMAGES/roofing/3.jpg" alt="Professional roof inspection with clipboard">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">📋</div>
+                        <h3>Roof Inspections</h3>
+                        <p>Thorough inspections to assess roof condition, identify issues early, and provide detailed reports for your peace of mind.</p>
+                    </div>
+                </div>
+
+                <!-- Storm Damage -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="STOCK-IMAGES/roofing/4.jpg" alt="Large-scale storm damage restoration project">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">⚡</div>
+                        <h3>Storm Damage Restoration</h3>
+                        <p>Emergency response and expert restoration after storms, hail, wind, and weather events with insurance claim assistance.</p>
+                    </div>
+                </div>
+
+                <!-- Emergency Repairs -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="STOCK-IMAGES/roofing/5.jpg" alt="Emergency storm damage repair crew">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🚨</div>
+                        <h3>Emergency Repairs</h3>
+                        <p>24/7 emergency response for urgent roofing issues, leaks, and damage with same-day service availability.</p>
+                    </div>
+                </div>
+
+                <!-- Additional Services -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="STOCK-IMAGES/roofing/1.jpg" alt="Gutter installation and siding work">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🛠️</div>
+                        <h3>Gutters & Siding</h3>
+                        <p>Professional gutter installation, repair, siding work, and framing services to complete your home's exterior protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- PROCESS SECTION -->
+    <!-- ========================================================================== -->
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Process</h2>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3>Free Inspection</h3>
+                    <p>We conduct a comprehensive, no-obligation roof inspection to assess condition and identify any issues affecting your home.</p>
+                    <div class="process-image">
+                        <img src="STOCK-IMAGES/roofing/3.jpg" alt="Professional roof inspection">
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3>Detailed Estimate</h3>
+                    <p>Receive a transparent, itemized estimate with material specifications, timelines, and warranty information for your project.</p>
+                    <div class="process-image">
+                        <img src="STOCK-IMAGES/roofing/2.jpg" alt="Detailed project estimate review">
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3>Professional Installation</h3>
+                    <p>Our skilled crew executes the work with precision using premium materials and industry-best practices for superior results.</p>
+                    <div class="process-image">
+                        <img src="STOCK-IMAGES/roofing/1.jpg" alt="Professional installation in progress">
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3>Final Walkthrough</h3>
+                    <p>We conduct a thorough final inspection with you, ensuring every detail meets our high standards and your expectations.</p>
+                    <div class="process-image">
+                        <img src="STOCK-IMAGES/roofing/6.jpg" alt="Completed project walkthrough">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- GALLERY SECTION -->
+    <!-- ========================================================================== -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Our Work</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="STOCK-IMAGES/roofing/6.jpg" alt="Completed roof replacement with curb appeal">
+                    <div class="gallery-overlay">
+                        <div class="gallery-label">Professional Installation</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="STOCK-IMAGES/roofing/4.jpg" alt="Large roof replacement project">
+                    <div class="gallery-overlay">
+                        <div class="gallery-label">Storm Restoration</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="STOCK-IMAGES/roofing/1.jpg" alt="Aerial crew installing new roof">
+                    <div class="gallery-overlay">
+                        <div class="gallery-label">Quality Craftsmanship</div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="STOCK-IMAGES/roofing/5.jpg" alt="Storm damage restoration work">
+                    <div class="gallery-overlay">
+                        <div class="gallery-label">Emergency Response</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- CONTACT SECTION -->
+    <!-- ========================================================================== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-heading" style="margin-bottom: 3rem;">
+                <h2 style="color: var(--text-light);">Get In Touch</h2>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+14695406823" style="color: var(--text-light); font-weight: 700;">(469) 540-6823</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:bulletproof0930@gmail.com" style="color: var(--text-light);">bulletproof0930@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Address</h3>
+                        <p>Dallas, TX 75189</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Website</h3>
+                        <p><a href="http://bulletproofRoofingtx.com/" target="_blank" style="color: var(--text-light);">bulletproofRoofingtx.com</a></p>
+                    </div>
+
+                    <div class="emergency-line">
+                        <span class="emergency-label">24/7 Emergency Hotline</span>
+                        <div class="emergency-number">(469) 540-6823</div>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="tel:+14695406823" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Call Us Now
+                        </a>
+                        <a href="mailto:bulletproof0930@gmail.com" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                            Send Email
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Select a Service --</option>
+                            <option value="Roof Replacement">Roof Replacement</option>
+                            <option value="Roof Repair">Roof Repair</option>
+                            <option value="Storm Damage Restoration">Storm Damage Restoration</option>
+                            <option value="Roof Inspection">Roof Inspection</option>
+                            <option value="Gutters & Siding">Gutters & Siding</option>
+                            <option value="Emergency Repairs">Emergency Repairs</option>
+                            <option value="Insurance Claim Assistance">Insurance Claim Assistance</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Property Address</label>
+                        <input type="text" id="address" name="address" placeholder="123 Main St, Dallas, TX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your roofing needs..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">Request Free Inspection</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- HOURS SECTION -->
+    <!-- ========================================================================== -->
+    <section class="section hours">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Hours & Availability</h2>
+            </div>
+
+            <div class="hours-grid">
+                <div class="hours-item">
+                    <div class="hours-day">Monday - Friday</div>
+                    <div class="hours-time">Always Available</div>
+                </div>
+                <div class="hours-item">
+                    <div class="hours-day">Saturday - Sunday</div>
+                    <div class="hours-time">24/7 Emergency</div>
+                </div>
+                <div class="hours-item">
+                    <div class="hours-day">Holidays</div>
+                    <div class="hours-time">Call Anytime</div>
+                </div>
+            </div>
+
+            <div class="hours-note">
+                Storm damage? Emergency roofing needs? We're available 24/7 for urgent calls. Don't wait—contact us immediately for emergency assistance.
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- SERVICE AREA SECTION -->
+    <!-- ========================================================================== -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Service Area</h2>
+            </div>
+
+            <div style="max-width: 600px; margin: 0 auto;">
+                <p style="text-align: center; margin-bottom: 2rem; font-size: 1.05rem; color: var(--secondary);">
+                    Bulletproof Roofing serves homeowners and businesses throughout North Texas including:
+                </p>
+
+                <ul class="service-area-list">
+                    <li>Dallas, TX</li>
+                    <li>Fort Worth, TX</li>
+                    <li>Arlington, TX</li>
+                    <li>McKinney, TX</li>
+                    <li>Plano, TX</li>
+                    <li>Garland, TX</li>
+                    <li>Irving, TX</li>
+                    <li>Denton, TX</li>
+                    <li>Rockwall, TX</li>
+                    <li>Azle, TX</li>
+                    <li>Flower Mound, TX</li>
+                    <li>Little Elm, TX</li>
+                    <li>Fate, TX</li>
+                    <li>Carrollton, TX</li>
+                    <li>Lewisville, TX</li>
+                    <li>Frisco, TX</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================== -->
+    <!-- FOOTER -->
+    <!-- ========================================================================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Bulletproof Roofing & Restoration LLC is your trusted partner for roofing, siding, gutters, and storm damage restoration in North Texas.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#services">Services</a></p>
+                <p><a href="#process">Our Process</a></p>
+                <p><a href="#gallery">Gallery</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Service Area</h4>
+                <ul class="service-area-list" style="margin: 0;">
+                    <li>Dallas, TX</li>
+                    <li>Fort Worth, TX</li>
+                    <li>McKinney, TX</li>
+                    <li>Garland, TX</li>
+                    <li>Denton, TX</li>
+                    <li>Rockwall, TX</li>
+                    <li>Azle, TX</li>
+                    <li>Flower Mound, TX</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> <a href="tel:+14695406823">(469) 540-6823</a></p>
+                <p><strong>Email:</strong> <a href="mailto:bulletproof0930@gmail.com">bulletproof0930@gmail.com</a></p>
+                <p><strong>Address:</strong> Dallas, TX 75189</p>
+                <p><strong>Website:</strong> <a href="http://bulletproofRoofingtx.com/" target="_blank">bulletproofRoofingtx.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bulletproof Roofing & Restoration LLC. All rights reserved.</p>
+            <p>Licensed • Bonded • Insured • 24/7 Emergency Service</p>
+        </div>
+    </footer>
+
+    <!-- ========================================================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================================================================== -->
+    <script>
+        // ====================================================================
+        // NAVIGATION SCROLL & MOBILE MENU
+        // ====================================================================
+
+        const nav = document.querySelector('nav');
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = navLinks.querySelectorAll('a');
+
+        // Hamburger menu toggle
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('nav');
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        // ====================================================================
+        // INTERSECTION OBSERVER FOR ANIMATIONS
+        // ====================================================================
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'slideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards
+        document.querySelectorAll('.service-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            observer.observe(card);
+        });
+
+        // ====================================================================
+        // FORM HANDLING
+        // ====================================================================
+
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const address = document.getElementById('address').value;
+            const message = document.getElementById('message').value;
+
+            // Build mailto link with form data
+            const subject = `Roofing Service Request - ${service}`;
+            const body = `Name: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}%0D%0AService: ${service}%0D%0AAddress: ${address}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+
+            window.location.href = `mailto:bulletproof0930@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+            // Visual feedback
+            const button = contactForm.querySelector('button[type="submit"]');
+            const originalText = button.textContent;
+            button.textContent = 'Message Sent!';
+            button.style.background = '#10B981';
+
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '';
+            }, 3000);
+        });
+
+        // ====================================================================
+        // SMOOTH SCROLL PADDING
+        // ====================================================================
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                const href = anchor.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ====================================================================
+        // REVEAL ANIMATIONS ON PAGE LOAD
+        // ====================================================================
+
+        window.addEventListener('load', () => {
+            // Trigger animations for elements already in view
+            const elementsInView = document.querySelectorAll('.about-content, .highlights, .hours-grid');
+            elementsInView.forEach(el => {
+                el.style.animation = 'fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+            });
+        });
+
+        // ====================================================================
+        // PARALLAX EFFECT ON HERO
+        // ====================================================================
+
+        const heroSection = document.querySelector('.hero');
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+
+            if (scrollPosition < heroSection.offsetHeight) {
+                const parallaxSpeed = scrollPosition * 0.5;
+                const heroImage = heroSection.querySelector('.hero-image img');
+                if (heroImage) {
+                    heroImage.style.transform = `translateY(${parallaxSpeed * 0.2}px)`;
+                }
+            }
+        });
+
+        // ====================================================================
+        // MOBILE CTA VISIBILITY
+        // ====================================================================
+
+        const mobileCTA = document.querySelector('.mobile-cta');
+        const heroHeight = heroSection.offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.pageYOffset;
+
+            if (scrollPosition > heroHeight) {
+                mobileCTA.style.opacity = '1';
+                mobileCTA.style.pointerEvents = 'auto';
+            } else {
+                mobileCTA.style.opacity = '0.8';
+            }
+        });
+    </script>
+</body>
+</html>
